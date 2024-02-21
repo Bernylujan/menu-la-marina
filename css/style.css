@@ -73,10 +73,10 @@ body{
 
 }
 
-.contenido-items {
+/* .contenido-items {
     display: flex;
     justify-content: center;
-}
+} */
 
 .item {
     display: flex;
