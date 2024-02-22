@@ -38,6 +38,7 @@ body{
 
 .div-menu{
     background-color: #FEF8E0;
+    position: relative;
 }
 
 .title-Principal {
@@ -61,21 +62,56 @@ body{
     padding: 10px; /* Espaciado interno */
     text-align: left; /* Centrar texto */
     margin-top:  15px;
-    height: 20px;
+    height: 25px;
     width: 300px;
 }
+.subtittle-R{
+    background-color: #C11717; /* Color de fondo para el título */
+    padding: 10px; /* Espaciado interno */
+    text-align: right; /* Centrar texto */
+    margin-top:  15px;
+    height: 25px;
+    width: 300px;
+    margin-left: auto;
+}
+
+.subtittle-2{
+    background-color: #C11717; /* Color de fondo para el título */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Centrar texto */
+    margin-top:  15px;
+    height: 25px;
+    width: 300px;
+    
+}
+
 .subtittle .p-subtittle{
     font-family: Arial, Helvetica, sans-serif;
     color: #FEF8E0; /* Cambiar color del texto a azul */
-    font-size: 20px; /* Cambiar tamaño de la fuente a 18px */
+    font-size: 30px; /* Cambiar tamaño de la fuente a 18px */
     font-weight: bold; /* Hacer el texto en negrita */
     margin-left: 35px; 
+    
 
 }
 
-.contenido-items {
+.subtittle-R .p-subtittle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FEF8E0; /* Cambiar color del texto a azul */
+    font-size: 30px; /* Cambiar tamaño de la fuente a 18px */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-right: 35px; 
+
+}
+
+.subtittle-2 .p-subtittle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FEF8E0; /* Cambiar color del texto a azul */
+    font-size: 30px; /* Cambiar tamaño de la fuente a 18px */
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-left: 35px; 
     
-    justify-content: center;
+
 }
 
 .item {
@@ -119,6 +155,7 @@ body{
     font-size: 16px;
     color: #c11717;
 }
+
 
 /* .contenido-items{
     display: flex; 
