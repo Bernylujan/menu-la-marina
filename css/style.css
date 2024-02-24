@@ -1,6 +1,6 @@
 
 body{ 
-    background-color: #FEF8E0;
+    background-color: white;
     font-family:  sans-serif;
 }
 .div-1{
@@ -37,12 +37,12 @@ body{
 }
 
 .div-menu{
-    background-color: #FEF8E0;
+    /* background-color: #FEF8E0; */
     position: relative;
 }
 
 .title-Principal {
-    background-color: #0b5453; /* Color de fondo para el título */
+    /* background-color: #0b5453; Color de fondo para el título */
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Centrar texto */
     margin-top:  15px;
@@ -51,7 +51,7 @@ body{
 
 .title-Principal .p-tittleF {
     font-family: Arial, Helvetica, sans-serif;
-    color: #FEF8E0; /* Cambiar color del texto a azul */
+    color: #0b5453; /* Cambiar color del texto a azul */
     font-size: 30px; /* Cambiar tamaño de la fuente a 18px */
     font-weight: bold; /* Hacer el texto en negrita */
     margin-top: 5px; /* Añadir margen superior de 5px */
@@ -66,7 +66,7 @@ body{
     width: 300px;
 }
 .subtittle-R{
-    background-color: #C11717; /* Color de fondo para el título */
+    /* background-color: #C11717;  */
     padding: 10px; /* Espaciado interno */
     text-align: right; /* Centrar texto */
     margin-top:  15px;
@@ -96,8 +96,9 @@ body{
 }
 
 .subtittle-R .p-subtittle{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #FEF8E0; /* Cambiar color del texto a azul */
+    color: #C11717; /* Cambiar color del texto a azul */
     font-size: 30px; /* Cambiar tamaño de la fuente a 18px */
     font-weight: bold; /* Hacer el texto en negrita */
     margin-right: 35px; 
@@ -116,14 +117,15 @@ body{
 
 .item {
     display: flex;
-    max-width: 430px; /* Ajusta el ancho máximo del elemento */
-    border-bottom:  solid 0.5px #ccc; /* Agrega un borde para simular una tarjeta */
+    max-width: 430px; 
+    border-bottom:  solid 0.5px #ccc; 
     overflow: hidden; /* Evita que los elementos se desborden */
     margin: 10px; /* Ajusta el margen para separar las tarjetas */
+    height: 150px;
 }
 
 .img-item {
-    flex: 1; /* Establece el tamaño flexible para que la imagen ocupe el espacio restante */
+    flex: 0.5; /* Establece el tamaño flexible para que la imagen ocupe el espacio restante */
     padding: 10px; /* Añade un relleno para separar la imagen del texto */
 }
 
@@ -139,11 +141,12 @@ body{
 }
 
 .name-item, .precio-item {
-    display: block; /* Hace que los elementos de texto se muestren uno debajo del otro */
-
+    display: inline; /* Hace que los elementos de texto se muestren uno debajo del otro */
+   
 }
 
 .name-item{
+    font-family: fantasy;
     margin-top: 15px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -152,8 +155,15 @@ body{
 }
 
 .precio-item{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     color: #c11717;
+    margin-left: 15px;
+}
+
+.descripcion p{
+    margin-top: 15px;
+    
 }
 
 
