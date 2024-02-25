@@ -190,7 +190,7 @@ body{
     border-radius: 10px;
 } */
 
-@media only screen and (max-width: 430px){
+@media only screen and (max-width: 490px){
     body{ 
         background-color: white;
         font-family:  sans-serif;
