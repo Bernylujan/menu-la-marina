@@ -311,7 +311,7 @@ body{
         border-bottom:  solid 0.5px #ccc; 
         overflow: hidden; /* Evita que los elementos se desborden */
         margin: 10px; /* Ajusta el margen para separar las tarjetas */
-        height: 100px;
+        height: 110px;
     }
     
     .img-item {
