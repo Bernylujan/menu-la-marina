@@ -132,10 +132,35 @@ body{
     padding: 10px; /* Añade un relleno para separar los elementos de texto */
 }
 
+.img-item.activate{ 
+    position: fixed; 
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+.img-item.activate ::after{
+    content: '';
+    position: fixed; 
+    width: 400px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    
+    z-index: 0;
+}
+
 .img-item img {
     width: 100%;
     height: auto;
     border-radius: 5px; /* Ajusta el radio del borde de la imagen */
+    z-index: 1;
 }
 
 .name-item, .precio-item {
@@ -315,8 +340,32 @@ body{
     }
     
     .img-item {
-        flex: 0.5; /* Establece el tamaño flexible para que la imagen ocupe el espacio restante */
-        padding: 10px; /* Añade un relleno para separar la imagen del texto */
+        flex: 0.5; 
+        padding: 10px; 
+    }
+
+    .img-item.activate{ 
+        position: fixed; 
+        width: 400px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+    }
+
+    .img-item.activate ::after{
+        content: '';
+        position: fixed; 
+        width: 400px;
+        height: 300px;
+        top: 0;
+        left: 0;
+        background-color: gray;
+        opacity: 45%;
+        z-index: 0;
     }
     
     .text-items {
@@ -327,7 +376,8 @@ body{
     .img-item img {
         width: 100%;
         height: auto;
-        border-radius: 5px; /* Ajusta el radio del borde de la imagen */
+        border-radius: 5px; 
+        z-index: 1;
     }
     
     .name-item, .precio-item {
