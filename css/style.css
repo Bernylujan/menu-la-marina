@@ -320,8 +320,8 @@ body{
     }
     
     .text-items {
-        flex: 1; /* Establece el tamaño flexible para los elementos de texto */
-        padding: 10px; /* Añade un relleno para separar los elementos de texto */
+        flex: 1; 
+        padding: 2px;
     }
     
     .img-item img {
@@ -331,16 +331,19 @@ body{
     }
     
     .name-item, .precio-item {
-        display: inline; /* Hace que los elementos de texto se muestren uno debajo del otro */
+        display: inline-block; 
        
     }
     
     .name-item{
         font-family: "Bebas Neue", sans-serif;
-        margin-top: 15px;
-        margin-bottom: 30px;
-        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 15px;
         color: #3c5d58;
+        display: inline-block;
+        max-width:150px;
+        
         
     }
     
@@ -348,12 +351,13 @@ body{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 16px;
         color: #c11717;
-        margin-left: 15px;
+        margin-left: 10px;
     }
     
     .descripcion p{
-        margin-top: 15px;
+        margin-top: 7px;
         text-align: justify;
+        font-size: 13px;
         
     }
 }
