@@ -161,7 +161,7 @@
                 <div class="contenido-items">  
                     <div class="item">
                         <div class="img-item">
-                            <img src="img/mix-tostadas.png" alt="">
+                            <img src="img/mix-tostadas.png" alt="" onclick="openPopup(this)">
                         </div> 
                         <div class="text-items">
                             <span class="name-item">Carnitas de Atun</span>
@@ -212,6 +212,10 @@
             </div>
 
         </div>
+        <div id="popup" class="popup" onclick="closePopup()">
+            <span class="close">&times;</span>
+            <img class="popup-img" id="popupImg" src="" alt="">
+          </div>
        </main>
     </div>
     <script src="index.js"></script>

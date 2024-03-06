@@ -125,6 +125,7 @@ body{
 .img-item {
     flex: 0.5; /* Establece el tamaño flexible para que la imagen ocupe el espacio restante */
     padding: 10px; /* Añade un relleno para separar la imagen del texto */
+    
 }
 
 .text-items {
@@ -137,11 +138,11 @@ body{
     width: 400px;
     height: 300px;
     display: flex;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
-    overflow-y: scroll;
+
+    /* overflow-y: scroll; */
 }
 
 .img-item.activate ::after{
@@ -149,10 +150,6 @@ body{
     position: fixed; 
     width: 400px;
     height: 300px;
-    top: 0;
-    left: 0;
-    background-color: gray;
-    
     z-index: 0;
 }
 
@@ -344,30 +341,7 @@ body{
         padding: 10px; 
     }
 
-    .img-item.activate{ 
-        position: fixed; 
-        width: 400px;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        left: 0;
-        overflow-y: scroll;
-    }
-
-    .img-item.activate ::after{
-        content: '';
-        position: fixed; 
-        width: 400px;
-        height: 300px;
-        top: 0;
-        left: 0;
-        background-color: gray;
-        opacity: 45%;
-        z-index: 0;
-    }
-    
+   
     .text-items {
         flex: 1; 
         padding: 2px;
@@ -377,7 +351,7 @@ body{
         width: 100%;
         height: auto;
         border-radius: 5px; 
-        z-index: 1;
+        
     }
     
     .name-item, .precio-item {
@@ -410,6 +384,53 @@ body{
         font-size: 13px;
         
     }
+
+    /* Aqui Inicia el POP UP*/
+
+    .popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        width: 100%;
+        height: 100%;  
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 0px; 
+        padding: 5px; 
+      }
+      
+
+      
+      .popup-img {
+        display: block;
+        margin: auto;
+        width: 100%; /* Imagen ocupa todo el ancho */
+        height: auto; /* Se ajusta automáticamente la altura */
+        margin-top: 200px;
+      }
+      
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      
+      .close:hover,
+      .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
 }
 
 
